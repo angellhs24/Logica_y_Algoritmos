@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online - Filtro y Orden</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Tienda Online: Gestión de Productos</h1>
+    </header>
+
+    <main>
+        <!-- Formulario para agregar productos -->
+        <section>
+            <h2>Agregar Nuevo Producto</h2>
+            <form id="formulario-producto">
+                <div>
+                    <label for="nombre-producto">Nombre del producto:</label>
+                    <input type="text" id="nombre-producto" placeholder="Ej. Monitor, Teclado..." required>
+                </div>
+                <div>
+                    <label for="precio-producto">Precio ($):</label>
+                    <input type="number" id="precio-producto" min="1" step="0.01" placeholder="Ej. 45" required>
+                </div>
+                <div>
+                    <label for="categoria-producto">Categoría:</label>
+                    <input type="text" id="categoria-producto" placeholder="Ej. Electrónica, Ropa..." required>
+                </div>
+                <div>
+                    <button type="submit">Agregar Producto</button>
+                    <button type="reset">Limpiar Formulario</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Resultados de filter, sort, map y reduce -->
+        <section>
+            <h2>Resultados de Procesamiento (Filter, Sort, Map, Reduce)</h2>
+            <p><em>Revisa la consola de tu navegador para ver la salida detallada en tablas.</em></p>
+            <div id="contenedor-resumen"></div>
+        </section>
+
+        <!-- Inventario Actual -->
+        <section>
+            <h2>Inventario Completo</h2>
+            <button id="boton-restablecer" type="button">Restablecer datos iniciales</button>
+            <div id="contenedor-productos"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Tienda Online, Angel Hdez</p>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
