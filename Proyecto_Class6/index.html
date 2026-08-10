@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Regalos de Navidad (Recursión)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Búsqueda Recursiva de Regalos</h1>
+    </header>
+
+    <main>
+        <!-- Formulario Búsqueda Recursiva -->
+        <section>
+            <h2>Buscar Regalo en la Lista</h2>
+            <form id="formulario-buscar">
+                <div>
+                    <label for="buscar-regalo">Nombre del regalo a buscar:</label>
+                    <input type="text" id="buscar-regalo" placeholder="Ej. Lego, Rompecabezas..." value="Lego" required>
+                </div>
+                <div>
+                    <button type="submit">Buscar (Recursivo)</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Resultado de la Búsqueda Recursiva -->
+        <section>
+            <h2>Resultado de la Función `findGift()`</h2>
+            <div id="contenedor-resultado"></div>
+        </section>
+
+        <!-- Formulario para agregar nuevos regalos -->
+        <section>
+            <h2>Agregar Nuevo Regalo a la Lista</h2>
+            <form id="formulario-agregar">
+                <div>
+                    <label for="nuevo-regalo">Nuevo regalo:</label>
+                    <input type="text" id="nuevo-regalo" placeholder="Ej. Bicleta, Videojuego..." required>
+                </div>
+                <div>
+                    <button type="submit">Agregar Regalo</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Lista Completa -->
+        <section>
+            <h2>Lista Completa de Regalos</h2>
+            <button id="boton-restablecer" type="button">Restablecer regalos por defecto</button>
+            <div id="contenedor-lista"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Buscador de Regalos, Angel Hdez</p>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>

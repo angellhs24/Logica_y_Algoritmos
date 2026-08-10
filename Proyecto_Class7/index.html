@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búsqueda del Máximo - Divide and Conquer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Búsqueda del Máximo (Divide & Conquer)</h1>
+    </header>
+
+    <main>
+        <!-- Formulario para agregar números -->
+        <section>
+            <h2>Agregar Número al Arreglo</h2>
+            <form id="formulario-numero">
+                <div>
+                    <label for="nuevo-numero">Ingresa un número:</label>
+                    <input type="number" id="nuevo-numero" step="any" placeholder="Ej. 15, -4, 42..." required>
+                </div>
+                <div>
+                    <button type="submit">Agregar al Arreglo</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Resultado de findMax() -->
+        <section>
+            <h2>Resultado de `findMax()`</h2>
+            <div id="contenedor-resultado"></div>
+        </section>
+
+        <!-- Arreglo Completo -->
+        <section>
+            <h2>Arreglo Actual de Números</h2>
+            <button id="boton-restablecer" type="button">Restablecer datos de prueba</button>
+            <div id="contenedor-lista"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Algoritmos Divide & Conquer, Angel Hdez</p>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>

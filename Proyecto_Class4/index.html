@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizador de Mesa - Invitados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Organización de Mesa de Cena</h1>
+    </header>
+
+    <main>
+        <!-- Agregar Invitado -->
+        <section>
+            <h2>Agregar Invitado</h2>
+            <form id="formulario-invitado">
+                <div>
+                    <label for="nombre-invitado">Nombre del invitado:</label>
+                    <input type="text" id="nombre-invitado" placeholder="Ej. Carlos, Cecilia, Beatriz..." required>
+                </div>
+                <div>
+                    <button type="submit">Agregar y Ordenar</button>
+                    <button type="reset">Limpiar</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Resultado del Algoritmo -->
+        <section>
+            <h2>Pareja Sugerida (Dos Punteros)</h2>
+            <div id="contenedor-resultado"></div>
+        </section>
+
+        <!-- Lista Completa de Invitados -->
+        <section>
+            <h2>Lista Completa de Invitados (Orden Alfabético)</h2>
+            <button id="boton-restablecer" type="button">Restablecer datos de prueba</button>
+            <div id="contenedor-invitados"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Organizador de Eventos, Angel Hdez</p>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>

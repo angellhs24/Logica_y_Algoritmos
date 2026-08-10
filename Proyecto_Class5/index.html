@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herramienta para Escritores - Palabra Más Larga</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Buscador de la Palabra Más Larga</h1>
+    </header>
+
+    <main>
+        <!-- Formulario para ingresar párrafo -->
+        <section>
+            <h2>Ingresa un Párrafo</h2>
+            <form id="formulario-texto">
+                <div>
+                    <label for="campo-texto">Escribe o pega el texto a analizar:</label>
+                    <textarea id="campo-texto" rows="4" placeholder="Escribe tu texto aquí..." required></textarea>
+                </div>
+                <div>
+                    <button type="submit">Encontrar Palabra</button>
+                    <button type="button" id="boton-ejemplo">Probar Ejemplo</button>
+                    <button type="reset">Limpiar</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Resultado del procesamiento -->
+        <section>
+            <h2>Resultado de la Ventana Deslizante (Sliding Window)</h2>
+            <div id="contenedor-resultado"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Herramientas para Escritores, Angel Hdez</p>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>

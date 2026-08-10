@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f1eb;
+    color: #333;
+    line-height: 1.5;
+}
+
+header {
+    padding: 2rem 1rem 1rem;
+    text-align: center;
+    background-color: #d8c3a5;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+main {
+    max-width: 800px;
+    margin: 1.5rem auto;
+    padding: 0 1rem 2rem;
+}
+
+section {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+    margin-bottom: 1.5rem;
+}
+
+section h2 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    color: #5f4b3f;
+}
+
+.receta-item {
+    border: 1px solid #d7c7b0;
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #fbf5ef;
+}
+
+form div {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font: inherit;
+    resize: vertical;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 0.85rem 1.2rem;
+    font: inherit;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+button[type="submit"] {
+    background-color: #a56f48;
+    color: #ffffff;
+    margin-right: 0.5rem;
+}
+
+#boton-ejemplo {
+    background-color: #5f4b3f;
+    color: #ffffff;
+    margin-right: 0.5rem;
+}
+
+button[type="reset"] {
+    background-color: #cac2b8;
+    color: #333;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0 2rem;
+    color: #6d5a4f;
+}
+
+@media (max-width: 600px) {
+    button[type="submit"],
+    #boton-ejemplo,
+    button[type="reset"] {
+        width: 100%;
+        margin: 0 0 0.75rem;
+    }
+}
