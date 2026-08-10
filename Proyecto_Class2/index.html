@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Lista de Compras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Lista de Compras</h1>
+    </header>
+
+    <main>
+        <!-- Sección para agregar productos -->
+        <section>
+            <h2>Agregar Producto</h2>
+            <form id="formulario-compras">
+                <div>
+                    <label for="nombre-producto">¿Qué producto deseas agregar?</label>
+                    <input type="text" id="nombre-producto" name="nombre-producto" placeholder="Ej. Huevos, Pan, Café..." required>
+                </div>
+                
+                <div>
+                    <button type="submit">Agregar a la Lista</button>
+                    <button type="reset">Limpiar Formulario</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Sección para mostrar la lista de compras -->
+        <section>
+            <h2>Mi Lista de Compras</h2>
+            <button id="boton-eliminar-todas" type="button">Vaciar lista</button>
+            <div id="contenedor-lista-compras">
+                <p>No hay productos en la lista aún.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Gestión de Compras, Angel Hdez</p>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
