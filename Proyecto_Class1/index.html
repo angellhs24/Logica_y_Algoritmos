@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Clase 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Planificador de Viajes</h1>
+    </header>
+
+    <main>
+        <!-- Sección para agregar viajes -->
+        <section>
+            <h2>Agregar Viaje</h2>
+            <form id="formulario-viaje">
+                <div>
+                    <label for="lugar-destino">¿A dónde viajarás?</label>
+                    <select id="lugar-destino" required>
+                        <option value="Paris">Paris</option>
+                        <option value="Londres">Londres</option>
+                        <option value="New York">New York</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="fecha-hora">¿Cuándo quieres viajar?</label>
+                    <input type="datetime-local" id="fecha-hora" name="fecha-hora" required>
+                </div>
+                <div>
+                    <label for="medio-transporte">¿En qué medio de transporte quieres viajar?</label>
+                    <select id="medio-transporte" required>
+                        <option value="Avión">Avión</option>
+                        <option value="Tren">Tren</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <button type="submit">Calcular Costo de Viaje</button>
+                    <button type="reset">Limpiar Formulario</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Sección para mostrar los viajes con costos -->
+        <section>
+            <h2>Cotización de Viajes</h2>
+            <button id="boton-eliminar-todas" type="button">Eliminar todas</button>
+            <div id="contenedor-cotizacion-viajes">
+                <p>No hay viajes a cotizar costos.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Proyecto Clase 1, Angel Hdez</p>
+    </footer>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
